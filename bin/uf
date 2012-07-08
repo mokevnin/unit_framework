@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+require 'unit_framework'
+require '/home/kirill/projects/unit_framework/test/unit_framework/case_test'
+
+#Dir[ARGV.first].each do |f|
+  #require f
+#end
+
+r = UnitFramework::Runner.new([UnitFramework::CaseTest])
+result = r.run
+result.finish
+
